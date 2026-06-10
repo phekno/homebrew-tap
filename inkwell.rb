@@ -5,13 +5,13 @@
 class Inkwell < Formula
   desc "Cloud-backed journaling TUI built on Bubble Tea"
   homepage "https://github.com/phekno/inkwell"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/phekno/inkwell/releases/download/v0.1.0/inkwell_0.1.0_darwin_arm64.tar.gz"
-    sha256 "64a55e3040a0378554a3bc9e1d329257be16edc5923ba6dc797fedcdb6123712"
+    url "https://github.com/phekno/inkwell/releases/download/v0.1.1/inkwell_0.1.1_darwin_arm64.tar.gz"
+    sha256 "a1b6aca101fa8e7cbaebe0f952e9cd30d90f0c5dbd5485c2f8988b8dfa269cab"
 
     define_method(:install) do
       bin.install "inkwell"
